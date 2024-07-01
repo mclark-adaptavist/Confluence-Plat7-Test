@@ -31,3 +31,6 @@ Set your hava home to the JDK 17 and make sure your open terminal returns that v
    to import com.atlassian.plugin.web.model.WebPanel;`
 9. Repeat steps 2-5
 10. You should not get the error and be able to log into confluence
+
+The WebPanel class is defined in `matttest.fragments.SomeWebPanel`, and used by the `web-panel` with key `test-key` 
+located in `src/main/resources/atlassian-plugin.xml`.
