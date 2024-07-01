@@ -13,10 +13,7 @@ public class SomeWebPanel implements WebPanel {
 
     @Override
     public String getHtml(Map<String, Object> context) {
-        return """
-            <div class='aui-banner aui-banner-error' role='banner' aria-hidden='false'>
-            <strong>Testing123</strong>: Test Web Panel using New WebPanel Interface</div>
-        """;
+        return "<div class='aui-banner aui-banner-error' role='banner' aria-hidden='false'> <strong>Testing123</strong>: Test Web Panel using New WebPanel Interface</div>";
     }
 
     @Override
