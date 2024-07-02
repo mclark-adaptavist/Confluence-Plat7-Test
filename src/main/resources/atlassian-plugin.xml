@@ -49,21 +49,17 @@
     <link linkId="scriptrunnerhome_link">/plugins/servlet/upm</link>
   </web-item>
 
-  <web-panel key='test-key' name='MattConf generated web panel - test-key' location='atl.confluence.header' weight='1'
-             class='matttest.fragments.SomeWebPanel'>
-    <label>Test</label>
-    <condition class='matttest.fragments.SomeCondition'>
-      <param name='script' value='true' />
-    </condition>
+    <web-panel key='test-key' name='MattConf generated web panel - test-key' location='atl.confluence.header' weight='1'
+               class='matttest.fragments.SomeWebPanel'>
 
-    <param name='providerScript' value='script:writer.write("Hello world!")' />
-  </web-panel>
+        <label>Test</label>
+        <condition class='matttest.fragments.SomeCondition'>
+            <param name='script' value='true'/>
+        </condition>
+        <context-provider class="matttest.fragments.SomePanelContext">
+            <param name="providerScript">'writer.write("Hello world!")'</param>
+        </context-provider>
 
-  <!-- IGNORE THIS PART BELOW FOR NOW -->
-  <!--  <web-panel key="test-panel" location="system.admin" class="matttest.fragments.SomeWebPanel" >-->
-  <!--    <description>Some HTML Banner</description>-->
-  <!--        <condition class="matttest.fragments.SomeCondition"/>-->
-  <!--    <context-provider class="matttest.fragments.SomePanelContext"/>-->
-  <!--  </web-panel>-->
-
+        <!--    <param name='providerScript' value='script:writer.write("Hello world!")' /> -->
+    </web-panel>
 </atlassian-plugin>
